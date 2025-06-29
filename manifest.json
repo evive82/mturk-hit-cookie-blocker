@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "MTurk Hit Cookie Blocker",
+  "author": "Evive",
+  "version": "1.0",
+  "description": "Blocks 'Hit-*' cookies from worker.mturk.com to prevent '400 Bad Request - Cookie Too Large' errors.",
+  "homepage_url": "https://github.com/evive82/mturk-hit-cookie-blocker",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "*://worker.mturk.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{81dcf1b0-5e2e-4bbf-b9a4-9d3bbd05f93f}"
+    }
+  }
+}
